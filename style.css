@@ -172,10 +172,21 @@ button {
     font-size: 20px;
     font-weight: bold;
     background: #6415ff;
-    margin: 40px 0 0;
     border-radius: 9999px;
     cursor: pointer;
     padding: 20px 0;
+    width: 35%;
+}
+
+.container {
+    padding: 120px 0;
+    margin: 0 40px;
+}
+
+.row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* 
@@ -226,8 +237,6 @@ border: 2px solid rgb(180, 183, 187);
 
 form:focus-within {
     border: 2px solid #6415ff;
-    border: 2px solid #6415ff;
-
 }
 *, ::before, ::after {
     box-sizing: border-box;
@@ -285,16 +294,6 @@ form:focus-within {
     width: 60%;
     height: 100%;
     max-height: 50vh;
-}
-
-.container {
-    padding: 120px 0;
-}
-
-.row {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 /*
@@ -377,16 +376,6 @@ QUALITY WORK
     width: 85%;
 }
 
-.quality__work--para {
-    width: 85%;
-    margin: 20px 0 0;
-    text-align: left;
-}
-
-.quality__work--action {
-    width: 35%;
-}
-
 .quality__work--img { 
     border-width: 1.5px;
     border-style: solid;
@@ -443,9 +432,10 @@ STEPS
     color: #cbd5ed;
 }
 
-.steps__para {
-    margin: 15px 0 0;
+#steps__para {
+    margin: 15px 0 0!important;
 }
+
 
 /*
 
@@ -453,6 +443,68 @@ VALUES
 
 */
 
+.values__wrapper { 
+    display: flex;
+    align-items: center;
+}
+.values__description {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 40px 40px;
+}
+
+.values__features--container {
+    display: flex;
+
+}
+
+.values-features__img {
+    text-align: center;
+    
+}
+
+#affordable_icon {
+    color: rgb(39 103 73);
+    background-color: #9ae6b4;
+    width: 55px;
+    height: 55px;
+    padding: 15px;
+    border-radius: 9999px;
+}
+
+#professional_icon {
+    color: rgb(155 44 44);
+    background-color: rgb(254 178 178);
+    width: 55px;
+    height: 55px;
+    padding: 15px;
+    border-radius: 9999px;
+}
+
+.values__features--description {
+    display: flex;
+    flex-direction: column;
+}
+
+.values-features__heading--container {
+    display: flex;
+    align-items: center;
+
+}
+
+.values-features__heading {
+    color: #243E63;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0 0 0 15px;
+
+}
+
+.values__img {
+    height: auto;
+    vertical-align: middle;
+}
 
 
 /*
@@ -462,52 +514,105 @@ PRICING
 */
 
 .pricing__header--wrapper {
+    width: 100%;
     align-items: center;
     text-align: center;
+    margin: 50px 0 0;
+}
+
+#pricing__header--para {
+    padding: 0 160px;
 }
 
 .plans {
     display: flex;
-    gap: 10px;    
+    height: 100%;
+    
 }
 .plan {
     display: flex;
     flex-direction: column;
     width: calc(100%/3);
+    background-color: rgb(255 255 255); 
+    margin: 80px 40px 0 0;
     padding: 10px 40px 0;
-    border-top: 5px solid green;
+    border-top: 10px;
     border-right: 1px solid #cbd5ed;
     border-left: 1px solid #cbd5ed;
     border-bottom: 1px solid #cbd5ed;
-    border-radius: 2px;
+    border-radius: 10px;
+    text-align: center;
+    height: 946px;
+}
+
+#personal {
+
+    .gradient-border-top {
+        width: 300px;
+        height: 100px;
+        position: relative;
+        background: white;
+        padding: 20px;
+        box-sizing: border-box;
+        margin: 20px;
+    }
+
+    .gradient-border-top::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        linear-gradient(to right,115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+    }
 }
 
 #business {
-    background-color: blue;
-    border-top: 2px solid blue;
+    background: 10px linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+    border-top: none;
+    color: white;
 }
+
+#enterprise {
+ linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+}
+
 
 .plan__header {
     display: flex;
     flex-direction: column;
     background: #FFFFFF
-    
+    padding: 40px 0;
+    line-height: 1.625;
+    text-transform: uppercase;  
+}
+.name {
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.625;
 }
 
-.plan__name {
-
+.price {
+    font-size: 70px;
+    font-weight: bold;
+    margin: 5px 0;
 }
 
-.plan__price {
-
-}
-
-.plan__duration {
+.duration {
+    font-size: 24px;
+    font-weight: bold;
+    font-color: #7C8BA1;
 
 }
 
 .plan__features {
-
+    display: flex;
+    flex-direction: column;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    align-items: center;
 }
 
 .main__features {

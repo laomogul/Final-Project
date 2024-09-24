@@ -142,13 +142,13 @@
             <h2 class="quality__work--subheading">
               Designed & Developed by <span class="purple">Professionals.</span>
             </h2>
-            <p class="quality__work--para">
+            <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Reprehenderit, iure praesentium. A ab amet dolore possimus sequi
               autem porro laudantium nulla quia, mollitia deleniti reprehenderit
               exercitationem eum voluptatibus, ex et?
             </p>
-            <button class="quality__work--action">Learn More</button>
+            <button>Learn More</button>
             </div>
           <figure>
             <img class="quality__work--img" src="./assets/hero-screenshot-1.png" alt="" />
@@ -173,23 +173,22 @@
                 <span class="steps__number">01</span>
                 <div class="steps_description">
                 <h6>Register</h6>
-                <p>Create an account with us using Google or Facebook.</p>
+                <p id="steps__para">Create an account with us using Google or Facebook.</p>
                 </div>
               <li class="steps__list">
                 <span class="steps__number">02</span>
                 <div class="steps_description">
                 <h6>Download</h6>
-                <p>Browse and Download the template that you like from the marketplace.</p>
+                <p id="steps__para">Browse and Download the template that you like from the marketplace.</p>
                 </div>
               <li class="steps__list">
                 <span class="steps__number">03</span>
                 <div class="steps_description">
                 <h6>Run</h6>
-                <p class="steps__para">Follow the instructions to setup and customize the template to your needs.
+                <p id="steps__para">Follow the instructions to setup and customize the template to your needs.
                 </p>
                 </div>
               </li>
-              
             </ul>
           </div>
           </div>
@@ -197,113 +196,124 @@
       </div>
     </section>
     <section id="values">
-    <div class="container">
-        <div class="row">
-          <div class="values__description">
-            <h5>VALUES</h5>
-            <h2>We Always Abide by Our <span>Principles.</span></h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Laudantium earum, illum reprehenderit vero quis consequatur
-                recusandae temporibus mollitia tempore molestiae? Amet quia quidem
-                ab consequuntur libero maiores voluptatum vero esse?
-            </p>
-            <div class="values__features--container">
-              <div class="values__features--description">
-                <div class="values-features__heading--container">
-                    <figure class="values-features__img--wrapper">
-                        <i class="fa-solid fa-dollar-sign"></i>
-                    </figure>
-                    <heading class="values-features__heading">Affordable</heading>
+        <div class="container">
+            <div class="row">
+                <div class="values__wrapper"> 
+
+                    <div class="values__description">
+                        <h5>VALUES</h5>
+                        <h2>We Always Abide by Our <span class="purple">Principles.</span></h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Laudantium earum, illum reprehenderit vero quis consequatur
+                            recusandae temporibus mollitia tempore molestiae? Amet quia quidem
+                            ab consequuntur libero maiores voluptatum vero esse?
+                        </p>
+                        <div class="values__features--container">
+                            <div class="values__features--description">
+                                <div class="values-features__heading--container">
+                                    <figure class="values-features__img"  >
+                                        <i id="affordable_icon" class="fa-solid fa-dollar-sign"></i>
+                                    </figure>
+                                    <heading class="values-features__heading">Affordable</heading>
+                                </div>
+                                <p>
+                                    We promise to offer you the best rate we can - at par with the industry standard.
+                                </p>
+                            </div>
+                            <div class="values__features--description">
+                                <div class="values-features__heading--container">
+                                    <figure  class="values-features__img">
+                                        <i id="professional_icon" class="fa-solid fa-briefcase"></i>
+                                    </figure>
+                                    <heading class="values-features__heading">Professionalism<heading>
+                                        
+                                </div>
+                                        <p>
+                                            We assure you that our templates are designed and created by professional designers.
+                                        </p>
+                                </div>
+                            </div>
+                            <button>
+                                <a href=""></a>Learn More
+                            </button>
+                        </div>
+                        <figure class="values__img">
+                            <img src="./assets/prototype-illustration.svg" alt="">
+                        </figure>
+                    </div>
+                    </div>
                 </div>
-                <div>
-                    <p>
-                        We promise to offer you the best rate we can - at par with the industry standard.
-                    </p>
-                </div>
-                <div class="values-features__heading--container">
-                    <figure class="values-features__img--wrapper">
-                        <i class="fa-solid fa-briefcase"></i>
-                    </figure>
-                    <heading class="values-features__heading">Professionalism</div>heading>
-                </div>
-                <div>
-                    <p>
-                        We assure you that our templates are designed and created by professional designers.
-                    </p>
-                </div>
-                <button>
-                    <a href=""></a>Learn More
-                </button>
-              </div>
             </div>
-            <figure>
-                <img src="./assets/prototype-illustration.svg" alt="">
-            </figure>
-          </div>
+           </div>
         </div>
-    </div>
     </section>
     <section id="pricing">
         <div class="container">
+            <div class="row">
                     <div class="pricing__header--wrapper">
                         <h5>PRICING</h5>
                         <h2>Reasonable & Flexible <span class="purple">Plans.</span></h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus rem corporis perspiciatis maiores facere quaerat minima aliquam culpa cumque enim.</p>
+                            <p id="pricing__header--para">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                Possimus rem corporis perspiciatis maiores 
+                                facere quaerat minima aliquam culpa cumque.
+                            </p>
                     </div>
-                    <div class="plans">
-                    <div class="plan">
-                        <div class="plan__header">
-                            <p><span class="plan__name">PERSONAL</span></p>
-                            <p><span class="plan__price">$17.99</span></p>
-                            <p><span class="plan__duration">MONTHLY</span></p>
+                <div class="plans">
+                        <div id="personal" class="plan">
+                            <div class="plan__header">
+                                <span class="name">personal</span>
+                                <span class="price">$17.99</span>
+                                <span class="duration">monthly</span>
+                            </div>
+                            <div class="plan__features">
+                                <span class="main__features">For Individuals</span>
+                                <span class="templates">30 Templates</span>
+                                <span class="landing">7 Landing Pages</span>
+                                <span class="internal">12 Internal Pages</span>
+                                <span class="assistance">Basic Assistance</span>
+                            </div>
+                            <div class="plan__action--wrapper">
+                                <button id="personal__action">BUY NOW</button>
+                            </div>
                         </div>
-                        <div class="plan__features">
-                            <p><span class="main__features">For Individuals</span></p>
-                            <p><span>30 Templates</span></p>
-                            <p><span>7 Landing Pages</span></p>
-                            <p><span>12 Internal Pages</span></p>
-                            <p><span>Basic Assistance</span></p>
+                        <div id="business" class="plan">
+                            <div class="plan__header">
+                                <span class="name">business</span>
+                                <span class="price">$37.99</span>
+                                <span class="duration">MONTHLY</span>
+                            </div>
+                            <div class="plan__features">
+                                <span class="main__features">For Small Businesses</span>
+                                <span class="templates">60 Templates</span>
+                                <span class="landing">15 Landing Pages</span>
+                                <span class="internal">22 Internal Pages</span>
+                                <span class="assistance">Priority Assistance</span>
+                            </div>
+                            <div class="plan__action--wrapper">
+                                <button id="business__action">BUY NOW</button>
+                            </div>
                         </div>
-                        <div class="plan__action--wrapper">
-                        <button class="plan__action--button">BUY NOW</button>
+                        <div id="enterprise" class="plan">
+                            <div class="plan__header">
+                                <span class="name">enterprise</span>
+                                <span class="price">$57.99</span>
+                                <span class="duration">monthly</span>
+                            </div>
+                            <div class="plan__features">
+                                <span class="main__features">For Large Companies</span>
+                                <span class="templates">90 Templates</span>
+                                <span class="landing">27 Landing Pages</span>
+                                <span class="internal">37 Internal Pages</span>
+                                <span class="assistance">Personal Assistance</span>
+                            </div>
+                            <div class="plan__action--wrapper">
+                                <button id="personal__action">BUY NOW</button>
+                            </div>
                         </div>
-                    </div>
-                    <div id="business" class="plan">
-                        <div class="plan__header">
-                            <p><span class="plan__name">BUSINESS</span></p>
-                            <p><span class="plan__price">$37.99</span></p>
-                            <p><span class="plan__duration">MONTHLY</span></p>
-                        </div>
-                        <div class="plan__features">
-                            <p><span class="main__features">For Small Businesses</span></p>
-                            <p><span>60 Templates</span></p>
-                            <p><span>15 Landing Pages</span></p>
-                            <p><span>22 Internal Pages</span></p>
-                            <p><span>Priority Assistance</span></p>
-                        </div>
-                        <div class="plan__action--wrapper">
-                        <button class="plan__action--button">BUY NOW</button>
-                        </div>
-                    </div>
-                    <div class="plan">
-                        <div class="plan__header">
-                            <p><span class="plan__name">ENTERPRISE</span></p>
-                            <p><span class="plan__price">$57.99</span></p>
-                            <p><span class="plan__duration">MONTHLY</span></p>
-                        </div>
-                        <div class="plan__features--wrapper">
-                            <p><span class="main__features">For Large Companies</span></p>
-                            <p><span>90 Templates</span></p>
-                            <p><span>27 Landing Pages</span></p>
-                            <p><span>37 Internal Pages</span></p>
-                            <p><span>Personal Assistance</span></p>
-                        </div>
-                        <div class="plan__action--wrapper">
-                            <button class="plan__action--button">BUY NOW</button>
-                        </div>
-                    </div>
                 </div>
+            </div>
         </div>
     </section>
     <section id="testimonials">
