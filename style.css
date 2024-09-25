@@ -536,7 +536,7 @@ PRICING
     background-color: rgb(255 255 255); 
     margin: 80px 40px 0 0;
     padding: 10px 40px 0;
-    border-top: 10px;
+    border-top: 10px  linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
     border-right: 1px solid #cbd5ed;
     border-left: 1px solid #cbd5ed;
     border-bottom: 1px solid #cbd5ed;
@@ -546,26 +546,23 @@ PRICING
 }
 
 #personal {
+    width: 300px;
+    height: 100px;
+    position: relative;
+    background: white;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 20px;
+}
 
-    .gradient-border-top {
-        width: 300px;
-        height: 100px;
-        position: relative;
-        background: white;
-        padding: 20px;
-        box-sizing: border-box;
-        margin: 20px;
-    }
-
-    .gradient-border-top::before {
+#personal::before {
         content: '';
         position: absolute;
         top: 0;
         left: 0;
         right: 0;
         height: 4px;
-        linear-gradient(to right,115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
-    }
+        background: linear-gradient(to right, 115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
 }
 
 #business {
