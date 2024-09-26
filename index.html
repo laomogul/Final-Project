@@ -269,10 +269,10 @@
                             </div>
                             <div class="plan__features">
                                 <span class="main__features">For Individuals</span>
-                                <span class="templates">30 Templates</span>
-                                <span class="landing">7 Landing Pages</span>
-                                <span class="internal">12 Internal Pages</span>
-                                <span class="assistance">Basic Assistance</span>
+                                <span class="feature">30 Templates</span>
+                                <span class="feature">7 Landing Pages</span>
+                                <span class="feature">12 Internal Pages</span>
+                                <span class="feature">Basic Assistance</span>
                             </div>
                             <div class="plan__action--wrapper">
                                 <button id="personal__action">BUY NOW</button>
@@ -285,11 +285,11 @@
                                 <span class="duration">MONTHLY</span>
                             </div>
                             <div class="plan__features">
-                                <span class="main__features">For Small Businesses</span>
-                                <span class="templates">60 Templates</span>
-                                <span class="landing">15 Landing Pages</span>
-                                <span class="internal">22 Internal Pages</span>
-                                <span class="assistance">Priority Assistance</span>
+                                <span id="feature" class="main__features">For Small Businesses</span>
+                                <span id="feature" class="feature">60 Templates</span>
+                                <span id="feature" class="feature">15 Landing Pages</span>
+                                <span id="feature" class="feature">22 Internal Pages</span>
+                                <span id="feature" class="feature">Priority Assistance</span>
                             </div>
                             <div class="plan__action--wrapper">
                                 <button id="business__action">BUY NOW</button>
@@ -303,13 +303,13 @@
                             </div>
                             <div class="plan__features">
                                 <span class="main__features">For Large Companies</span>
-                                <span class="templates">90 Templates</span>
-                                <span class="landing">27 Landing Pages</span>
-                                <span class="internal">37 Internal Pages</span>
-                                <span class="assistance">Personal Assistance</span>
+                                <span  class="feature">90 Templates</span>
+                                <span class="feature">27 Landing Pages</span>
+                                <span class="feature">37 Internal Pages</span>
+                                <span class="feature">Personal Assistance</span>
                             </div>
                             <div class="plan__action--wrapper">
-                                <button id="personal__action">BUY NOW</button>
+                                <button id="enterprise__action">BUY NOW</button>
                             </div>
                         </div>
                 </div>
@@ -319,42 +319,84 @@
     <section id="testimonials">
         <div class="container">
             <div class="row">
-                <figure>
+              <div class="testimonials__wrapper"> 
+                <figure class="testimonials__img">
                     <img src="./assets/love-illustration.svg" alt="">
                 </figure>
-                <div class="image-ratings__container">
+                <div class="ratings__container">
                     <h5>TESTIMONIALS</h5>
                     <h2>Our Clients <span class="purple">Love Us.</span></h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt recusandae in doloribus labore distinctio maiores expedita fugiat rerum sequi corporis.
                     </p>
-                    <div class="testimonials__slider">
-                        <div class="ratings__container">
-                            <i class="fa-solid fa-star"></i>
+                    <div class="slider__wrapper">
+                        <div class="ratings__star">
+                            <i class="fa-solid fa-star fa-2x"></i>
+                            <i class="fa-solid fa-star fa-2x"></i>
+                            <i class="fa-solid fa-star fa-2x"></i>
+                            <i class="fa-solid fa-star fa-2x"></i>
+                            <i class="fa-solid fa-star fa-2x"></i>
                         </div>
-                        <div class="testimonials_heading">
-                            <p>Love the Developer Experience and Design Principles !</p>
+                        <div >
+                            <p class="testimonial_heading">Love the Developer Experience and Design Principles !</p>
                         </div>
                         <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ipsam libero, et, dolores reprehenderit laudantium, eius quibusdam temporibus perspiciatis culpa expedita ad quaerat! Ipsum, ullam illum itaque asperiores dolor temporibus unde dolores maxime doloremque necessitatibus aliquid, voluptate nostrum debitis nisi facere accusamus id possimus dolorem vitae, aut porro? Sequi, in?</blockquote>
                         <div class="customer-info__controls--container">
                             <div class="customer__info">
                                 <figure>
-                                    <img src="./assets/adam-cuppy.avif" alt="">
+                                    <img class="customer__img" src="./assets/adam-cuppy.avif" alt="">
                                 </figure>
-                                <h5>Adam Cuppy</h5>
-                                <p>Founder, <br>EventsNYC</p>
-                                <div class="customer-info__control">
-                                    <button>
+                                <div class="customer__text">
+                                <h5 id="customer__name">Adam Cuppy</h5>
+                                <p id="customer__title">Founder, EventsNYC</p>
+                                </div>
+                            </div>
+                                <div class="slider__control">
+                                    <button class="slider__arrow">
                                         <i class="fa-solid fa-arrow-left"></i>
                                     </button>
-                                    <button>
+                                    <span class="vertical-line"></span>
+                                    <button class="slider__arrow">
                                         <i class="fa-solid fa-arrow-right"></i>
                                     </button>
                                 </div>
+                        </div>
+                    </div>
+                    <div class="slider__wrapper">
+                        <div class="ratings__star">
+                            <i class="fa-solid fa-star fa-2x"></i>
+                            <i class="fa-solid fa-star fa-2x"></i>
+                            <i class="fa-solid fa-star fa-2x"></i>
+                            <i class="fa-solid fa-star fa-2x"></i>
+                            <i class="fa-solid fa-star fa-2x"></i>
+                        </div>
+                        <div >
+                            <p class="testimonial_heading">Amazing User Experience</p>
+                        </div>
+                        <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ipsam libero, et, dolores reprehenderit laudantium, eius quibusdam temporibus perspiciatis culpa expedita ad quaerat! Ipsum, ullam illum itaque asperiores dolor temporibus unde dolores maxime doloremque necessitatibus aliquid, voluptate nostrum debitis nisi facere accusamus id possimus dolorem vitae, aut porro? Sequi, in?</blockquote>
+                        <div class="customer-info__controls--container">
+                            <div class="customer__info">
+                                <figure>
+                                    <img class="customer__img" src="./assets/charlotte-hale.avif" alt="">
+                                </figure>
+                                <div class="customer__text">
+                                <h5 id="customer__name">Charlotte Hale</h5>
+                                <p id="customer__title">Diretrr, Delos, Inc.</p>
+                                </div>
                             </div>
+                                <div class="slider__control">
+                                    <button class="slider__arrow">
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                    </button>
+                                    <span class="vertical-line"></span>
+                                    <button class="slider__arrow">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
                         </div>
                     </div>
                 </div>
+              </div>
             </div>
         </div>
     </section>
@@ -366,11 +408,11 @@
                     <h2>You have <span class="purple">Questions ?</span></h2>
                     <p>And we have got answers to all of them. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
-                <div class="faqs__container">
-                    <div class="faq__content">
+                <div class="faqs__content--wrapper">
+                    <div class="faqs__content">
                         <ul id="accordion">
                             <li>
-                                <label for="first">Are all the templates easily customizable ? <span class="arrow">&#x3e;</span></label>
+                                <label for="first">Are all the templates easily customizable ? <span class="accordion__arrow">&#x3e;</span></label>
                                 <input type="checkbox" name="accordion" id="first" checked>
                                 <div class="content">
                                     <p>Yes, they all are. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatibus natus provident. Ea, odio quam voluptates iusto architecto perspiciatis maxime.
@@ -378,7 +420,7 @@
                                 </div>
                             </li>
                             <li>
-                                <label for="second">How long do you usually support a standalone template for ? <span class="arrow">&#x3e;</span></label>
+                                <label for="second">How long do you usually support a standalone template for ? <span class="accordion__arrow">&#x3e;</span></label>
                                 <input type="checkbox" name="accordion" id="second">
                                 <div class="content">
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatibus natus provident. Ea, odio quam voluptates iusto architecto perspiciatis maxime.
@@ -386,7 +428,7 @@
                                 </div>
                             </li>
                             <li>
-                                <label for="third">What kind of payment methods do you accept ? <span class="arrow">&#x3e;</span></label>
+                                <label for="third">What kind of payment methods do you accept ? <span class="accordion__arrow">&#x3e;</span></label>
                                 <input type="checkbox" name="accordion" id="third">
                                 <div class="content">
                                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatibus natus provident. Ea, odio quam voluptates iusto architecto perspiciatis maxime.
@@ -394,7 +436,7 @@
                                 </div>
                             </li>
                             <li>
-                                <label for="fourth">Is there a subscription service to get the latest templates ? <span class="arrow">&#x3e;</span></label>
+                                <label for="fourth">Is there a subscription service to get the latest templates ? <span class="accordion__arrow">&#x3e;</span></label>
                                 <input type="checkbox" name="accordion" id="fourth">
                                 <div class="content">
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatibus natus provident. Ea, odio quam voluptates iusto architecto perspiciatis maxime.
@@ -402,7 +444,7 @@
                                 </div>
                             </li>
                             <li>
-                                <label for="fifth">Are the templates compatible with React ? <span class="arrow">&#x3e;</span></label>
+                                <label for="fifth">Are the templates compatible with React ? <span class="accordion__arrow">&#x3e;</span></label>
                                 <input type="checkbox" name="accordion" id="fifth">
                                 <div class="content">
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatibus natus provident. Ea, odio quam voluptates iusto architecto perspiciatis maxime.
@@ -410,7 +452,7 @@
                                 </div>
                             </li>
                             <li>
-                                <label for="sixth">Do you really support Internet Explorer 11 ? <span class="arrow">&#x3e;</span></label>
+                                <label for="sixth">Do you really support Internet Explorer 11 ? <span class="accordion__arrow">&#x3e;</span></label>
                                 <input type="checkbox" name="accordion" id="sixth">
                                 <div class="content">
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatibus natus provident. Ea, odio quam voluptates iusto architecto perspiciatis maxime.
